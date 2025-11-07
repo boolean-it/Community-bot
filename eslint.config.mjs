@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 
-module.exports = [
+export default [
+	{ ignores: ['eslint.config.mjs'] },
 	js.configs.recommended,
 	{
 		languageOptions: {
@@ -8,7 +9,7 @@ module.exports = [
 		},
 		rules: {
 			'arrow-spacing': ['warn', { before: true, after: true }],
-			'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+			'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 			'comma-dangle': ['error', 'always-multiline'],
 			'comma-spacing': 'error',
 			'comma-style': 'error',
@@ -16,6 +17,7 @@ module.exports = [
 			'dot-location': ['error', 'property'],
 			'handle-callback-err': 'off',
 			indent: ['error', 'tab'],
+				'no-mixed-spaces-and-tabs': 'error',
 			'keyword-spacing': 'error',
 			'max-nested-callbacks': ['error', { max: 4 }],
 			'max-statements-per-line': ['error', { max: 2 }],
@@ -25,7 +27,12 @@ module.exports = [
 			'no-inline-comments': 'error',
 			'no-lonely-if': 'error',
 			'no-multi-spaces': 'error',
-			'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1, maxBOF: 0 }],
+			'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1, maxBOF: 1 }],
+			'padded-blocks': ['error', {
+				blocks: 'never',
+				classes: 'never',
+				switches: 'never',
+			}, { allowSingleLineBlocks: true }],
 			'no-shadow': ['error', { allow: ['err', 'resolve', 'reject'] }],
 			'no-trailing-spaces': ['error'],
 			'no-var': 'error',

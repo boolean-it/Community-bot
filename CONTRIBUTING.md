@@ -34,13 +34,13 @@ Come ottenere il tuo account Discord Developer e creare il bot di test:
 
 4. Naviga nella sezione _Bot_ e clicca su _Add Bot_, dovresti vedere una cosa simile ![discord dashboard](./img/contribute-bottoken.png)
 
-5. Clicca su _Reset Token_ e poi su _Copy_ **non condividere mai con nessuno il token**
+5. Clicca su _Reset Token_ e poi su _Copy_, **non condividere mai con nessuno il token**
 
 6. Nel tuo editor rinomima il file `.env.example` in `.env` e aprilo, incolla il tuo token al posto di `PASTE_HERE_YOUR_TOKEN`. Attenzione a non lasciare spazi bianchi
 
 ## Creazione del server Discord di test
 
-1. Apri Dicord e clicca sull'icona `+` sotto la lista dei server a sinistra
+1. Apri Discord e clicca sull'icona `+` sotto la lista dei server a sinistra
 
 1. Scegli l'opzione _Create My Own_ > _For me and my friends_
 
@@ -56,12 +56,12 @@ Un bot è un utente come un altro e pertanto va invitato nel server per poterci 
 
 4. Incolla il _CLIENT ID_ nell'apposito campo e clicca sul link generato
 
-5. Si aprirà una pagina con una tendina dalla quale sceglire a quale server vuoi invtare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
+5. Si aprirà una pagina con una tendina dalla quale scegliere a quale server vuoi invitare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
 
-6. Aggiungi il tuo client ID anche al file `.env` al posto di _PASTE_HERE_YOUR_CLIENT_ID_
+6. Aggiungi il tuo client ID anche al file `.env` al posto di `PASTE_HERE_YOUR_CLIENT_ID`
 
-7. Sempre nel file `.env` incolla al posto di _PASTE_YOUR_SERVER_ID_ il server ID che puoi ottenere cliccando con il tasto destro sul nome del server in Discord. Se l'ID non compare nel menu contestuale, devi attivare la [modalità sviluppatore](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
+7. Sempre nel file `.env` incolla al posto di `PASTE_HERE_YOUR_SERVER_ID` il server ID che puoi ottenere cliccando con il tasto destro sul nome del server in Discord. Se l'ID non compare nel menu contestuale, devi attivare la [modalità sviluppatore](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
 
 ## Mettere il bot online
 
-Da teminale entra nella cartella del progetto ed esegui `npm run dev`, se hai fatto tutto correttamente il tuo bot risulterà online ora. Congratulazioni!
+Da terminale entra nella cartella del progetto ed esegui `npm run dev`, se hai fatto tutto correttamente il tuo bot risulterà online ora. Congratulazioni!
